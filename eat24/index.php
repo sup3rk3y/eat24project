@@ -4,16 +4,21 @@
   $ice_cream= array("Vanilla", "Chocolate", "Lime");
   $choice = "Choose";
 
-  function show_burgers() {
-    echo "showing Burger list";
-  }
+  function display_items($item) {
+    foreach($item as $value){
+      echo "<div class=\"menu\">
+              <div id=\"items\">
+                <div id=\"item-img\">
+                  <img src=\"./images/item.png\" id=\"item-logo\" alt=\"item\">
+                </div>
+                <div id=\"item-text\">
+                  <h1>$value</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>";
+    }
 
-  function show_drinks() {
-    echo "showing Drinks list";
-  }
-
-  function show_ice_cream() {
-    echo "showing Ice cream list";
   }
 ?>
 
@@ -36,7 +41,7 @@
       <div class="banner">
         <img src="images/banner.png" alt="bnr" class="banner-img">
       </div>
-      <h1 id="title">Eat24</h1>
+      <h1 id="title"><a href="index.php">Eat24</a></h1>
     </header>
     <main>
       <hr/>
@@ -55,19 +60,18 @@
       <input type="submit" value="Search">
     </form>
     <br/>
-    <div class="menu">
+
       <?php
         if(isset($_GET['show_burgers'])) {
-          show_burgers();
+          display_items($burgers);
         }
         elseif (isset($_GET['show_ice_cream'])) {
-          show_ice_cream();
+          display_items($ice_cream);
         }elseif(isset($_GET['show_drinks'])){
-          show_drinks();
+          display_items($drinks);
         }else{
-          echo "Nothing to show";
+          //echo "Nothing to show";
         }
-
       ?>
     </div>
     <div id="filler">

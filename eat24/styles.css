@@ -54,12 +54,18 @@ header > h1 {
 .menu {
   border: solid black;
   background: salmon;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
+
 
 footer {
   background: #322A61;
   color: #A8B2A8;
 }
+
+
 
 #filler {
   background: #EDF2F4;
@@ -69,4 +75,32 @@ footer {
 
 #title {
   padding-bottom: 20px;
+}
+
+#title a {
+    color: black;
+    text-decoration: none;
+}
+
+#items {
+  display: flex;
+  width: 100%;
+
+}
+
+
+#item-img {
+  background: lightblue;
+}
+
+#item-logo {
+  width: 150px;
+  padding: 10px;
+}
+
+#item-text {
+  background: lightblue;
+  height: 200px;
+  width: 100%;
+  padding: 10px;
 }
