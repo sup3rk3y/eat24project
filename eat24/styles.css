@@ -15,6 +15,23 @@ header > h1 {
   text-align: center;
 }
 
+h1,h2 {
+  margin: 0;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: auto;
+}
+
+.filler-wrap {
+  width: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
 .login {
   text-align: right;
   background-color: #EDF2F4;
@@ -38,7 +55,7 @@ header > h1 {
 }
 
 .nav > li > a:hover {
-  color: #C1C1C1;
+  color: red;
 }
 
 .banner {
@@ -57,20 +74,32 @@ header > h1 {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+
+}
+
+.menu-bg {
+  background: url("images/Copenhagen-bg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
 footer {
   background: #322A61;
   color: #A8B2A8;
+  text-align: center;
 }
 
 
 
 #filler {
-  background: #EDF2F4;
+  background: #8D99AE;
   display: block;
-  margin: 0;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  text-align: center;
 }
 
 #title {
