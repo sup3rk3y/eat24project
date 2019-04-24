@@ -37,6 +37,10 @@ h1,h2 {
   background-color: #EDF2F4;
 }
 
+.top-lane {
+  display: inline-block;
+}
+
 .nav {
   text-align: center;
   list-style: none;
@@ -83,6 +87,14 @@ h1,h2 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.default-search {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  background-color: red;
 }
 
 
@@ -132,4 +144,9 @@ footer {
   height: 200px;
   width: 100%;
   padding: 10px;
+}
+
+#creator {
+  color: red;
+  text-decoration: none;
 }
